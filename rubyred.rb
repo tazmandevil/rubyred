@@ -24,13 +24,13 @@ begin
 		puts "To which channel shall we post? "
 		$channel = gets
     
-		uri = URI.parse("https://red.liberame.org/api/statuses/update.xml/")
+		uri = URI.parse("https://REDSITE.URL/api/statuses/update.xml/")
      
 		http = Net::HTTP.new(uri.host, uri.port)
 		http.use_ssl = true
 		http.verify_mode = OpenSSL::SSL::VERIFY_NONE
 		request = Net::HTTP::Post.new(uri.request_uri)
-		request.basic_auth("taz@liberame.org", "truthMur4l")
+		request.basic_auth("USER@DOMAIN.URL", "PASSWORD")
 		request.set_form_data({"source" => "red.rb", "channel" => $channel.chomp, "status" => $update, "title" => $title.chomp })
 		response = http.request(request)
       
