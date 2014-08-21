@@ -11,11 +11,17 @@ red password, and the url of your redmatrix hub, respectively.
 requires
 * vim (you COULD change the editor to nano or emacs or whatever, if you like, but why?
 * ruby (tempfile, uri, net/http, json)
+<<<<<<< HEAD
+
+Script has only been successfully tested on linux (debian, in fact,
+but why would you use anything else?
+=======
+>>>>>>> 1a878fe4a04ea70b6af2fd840f9b6506430f215a
 
 Script has only been successfully tested on linux (debian, in fact,
 but why would you use anything else?
 
-by tazman deville 
-https://red.liberame.org/channel/tazdvl
+by tazman deville | https://red.liberame.org/channel/tazdvl
+and tony baldwin | http://tonybaldwin.me
 
 released according to GPLv3
