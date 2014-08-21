@@ -28,6 +28,8 @@ begin
 		$title = gets
 		puts "To which channel shall we post? "
 		$channel = gets
+		puts "Category/ies? (comma separated list) "
+		$cats = gets
     
 		uri = URI.parse("https://REDURLD.TLD/api/statuses/update.xml/")
      
@@ -36,7 +38,7 @@ begin
 		http.verify_mode = OpenSSL::SSL::VERIFY_NONE
 		request = Net::HTTP::Post.new(uri.request_uri)
 		request.basic_auth("REDUSER", "REDPASS")
-		request.set_form_data({"source" => "red.rb", "channel" => $channel.chomp, "status" => $update, "title" => $title.chomp })
+		request.set_form_data({"source" => "red.rb", "channel" => $channel.chomp, "category" => $cats.chomp, "status" => $update, "title" => $title.chomp })
 		response = http.request(request)
       
 		puts "-------------"

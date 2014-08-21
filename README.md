@@ -14,8 +14,12 @@ requires
 
 Script has only been successfully tested on linux (debian, in fact,
 but why would you use anything else?
+=======
 
-by tazman deville 
-https://red.liberame.org/channel/tazdvl
+Script has only been successfully tested on linux (debian, in fact,
+but why would you use anything else?
+
+by tazman deville | https://red.liberame.org/channel/tazdvl
+and tony baldwin | http://tonybaldwin.me
 
 released according to GPLv3
